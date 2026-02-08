@@ -26,6 +26,7 @@ Enable the ESP/Plugin:
 
 ## Folder Structure
 
+```
 FO4StringUtils/
 └── Releases/
     ├── 0.6.23-1.10.163-GOTY/
@@ -66,3 +67,4 @@ FO4StringUtils/
             │           └── User/
             │               └── FO4StringUtils.psc
             └── FO4StringUtils-v4.0.7z
+```
