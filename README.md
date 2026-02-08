@@ -38,7 +38,7 @@ Import FO4StringUtils
 
 Event OnQuestInit()
    String result = FO4StringUtils.Replace("Radroach Meat", "Radroach", "Bloatfly")
-   Debug.Notification(result)
+   Debug.Notification(result)  ; "Bloatfly Meat"
 EndEvent
 ```
 
