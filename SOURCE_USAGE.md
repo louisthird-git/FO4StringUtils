@@ -26,13 +26,17 @@ Copy the compiled Papyrus scripts:
 
 Use the provided compiled .pex file, but to compile the Papyrus script if needed, i.e. generate a .pex (Papyrus executable file) from a .psc (Papyrus source file):
 
+```bash
 "C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Papyrus Compiler\PapyrusCompiler.exe" %1 -f="C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source\Base\Institute_Papyrus_Flags.flg" -i="C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source" -op -r -final "C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source\User\FO4StringUtils.psc"
+```
 
 Ensure your mod imports FO4StringUtils before using the functions.
 
 ## Importing in Papyrus
 
+```papyrus
 Import FO4StringUtils
+```
 
 Once imported, you can call any of the global native functions provided by FO4StringUtils.
 
@@ -165,10 +169,12 @@ EndEvent
 
 ### Expected notifications:
 
-- Upper:    HELLO WORLD   
-- Trimmed: hello world
-- Contains 'world'? True
-- Joined: hello-world
+```
+Upper:    HELLO WORLD   
+Trimmed: hello world
+Contains 'world'? True
+Joined: hello-world
+```
 
 ## Notes
 
