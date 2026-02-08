@@ -44,12 +44,12 @@ EndEvent
 
 ## Feature Requests
 
-| Feature       | Description                                                          |
-|---------------|----------------------------------------------------------------------|
-| PluginVersion | String PluginVersion() → "1.0"                                       |
-| GameVersion   | String GameVersion() → "1.10.163"                                    |
-| F4SEVersion   | String F4SEVersion() → "0.6.23"                                      |
-| RuntimeInfo   | String RuntimeInfo() → "FO4StringUtils:1.0,FO4:1.10.163,F4SE:0.6.23" |
+| Feature        | Description                                                          |
+|----------------|----------------------------------------------------------------------|
+| PluginVersion  | String PluginVersion() → "1.0"                                       |
+| GameVersion    | String GameVersion() → "1.10.163"                                    |
+| RuntimeVersion | String RuntimeVersion() → "0.6.23"                                   |
+| VersionInfo    | String VersionInfo() → "FO4StringUtils:1.0,FO4:1.10.163,F4SE:0.6.23" |
 
 ## Production Issues
 
