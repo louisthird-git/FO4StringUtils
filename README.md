@@ -42,3 +42,9 @@ Event OnQuestInit()
 EndEvent
 ```
 
+## Feature Requests
+
+| Feature       | Description                       |
+|---------------|-----------------------------------|
+| PluginVersion | String PluginVersion() → "1.0"    |
+| GameVersion   | String GameVersion() → "1.10.163" |
