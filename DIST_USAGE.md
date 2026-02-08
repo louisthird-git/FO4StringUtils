@@ -1,17 +1,17 @@
-# FO4StringUtils Releases
+# FO4StringUtils Distributions
 
 ## Organization
 - Folders are organized by game edition: <F4SE-Version>-<FO4-Version>-<FO4-Edition>
-- Beneath that are FO4StringUtils release versions for that game edition: X.Y
+- Beneath that are FO4StringUtils distributions for that game edition: X.Y
 
 ## Installation
 
-Choose your version: Make sure you pick the release that matches your game edition:
+Choose your version: Make sure you pick the distribution that matches your game edition:
 - GOTY → 0.6.23-1.10.163-GOTY
 - NextGen → 0.7.2-1.10.984-NextGen
 - Anniversary → 0.7.7-1.11.191-Anniversary
 
-Copy the Data folder: Take the Data/ folder from the release you want and merge it into your Fallout 4 game directory’s Data/ folder.
+Copy the Data folder: Take the Data/ folder from the distribution you want and merge it into your Fallout 4 game directory’s Data/ folder.
 
 Enable the ESP/Plugin:
 - Open your mod manager or Fallout 4 launcher.
@@ -21,7 +21,7 @@ Enable the ESP/Plugin:
 
 ## Notes
 - Follow the installation structions above carefully.
-- Each release folder is fully self-contained for its version of the game/F4SE.
+- Each distribution folder is fully self-contained for its version of the game/F4SE.
 - The .7z archive is included if you prefer to download or backup a single file.
 
 ## Folder Structure
