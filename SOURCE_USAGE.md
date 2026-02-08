@@ -52,30 +52,6 @@ FO4StringUtils is designed to provide reliable and comprehensive string utilitie
 
 Intended for modders who need dependable, full-featured string utilities without worrying about Papyrus caching quirks or inconsistent behavior.
 
-### Case Sensitivity, String Normalization, and Engine String Internals
-
-All string search, comparison, and mutation functions provided by FO4StringUtils are case-insensitive by design. This decision is intentional and reflects the way Papyrus strings are handled internally by the Fallout 4 engine. Operations such as Search, Compare, Equals, Replace, and related functions operate on normalized string data so that character casing does not affect results.
-
-Internally, many game strings are pooled, cached, or resolved through the engine’s string table. As a result, strings originating from engine-managed sources—such as EditorIDs, form names, dialogue text, or other cached values—may be canonicalized or reused in ways that make casing unreliable or inconsistent when observed from Papyrus or the Creation Kit. Treating string comparisons as case-sensitive in this environment can therefore lead to surprising or non-deterministic behavior.
-
-FO4StringUtils embraces this reality by normalizing strings before performing comparisons or mutations, ensuring consistent and predictable behavior regardless of how the original strings were cased or cached by the engine. Rather than exposing or depending on engine-specific casing behavior, the library provides a stable, deterministic API that aligns with how Papyrus strings behave in practice. This avoids ambiguous matching semantics, eliminates subtle bugs caused by string pooling, and ensures that string operations behave consistently across all call sites and data sources.
-
-Example:
-
-```papyrus
-r = FO4StringUtils.Replace(
-    FO4StringUtils.ToLower(s),
-    "pass",
-    "***"
-)
-```
-
-Sequence of events:
-- The original string s has the value "Password". Internally, the engine may resolve or cache this value using a canonical form (for example, "PASSWORD"), which would not exactly match "pass" in a case-sensitive comparison.
-- ToLower() explicitly normalizes the string value passed to FO4StringUtils, producing "password".
-- Replace() performs a strict, case-sensitive match of "pass" within "password" and replaces the matched span with "***".
-- The resulting value assigned to r is "***word".
-
 ## Function Reference
 
 ### Searching & Comparison
@@ -154,13 +130,11 @@ Import FO4StringUtils
 
 Event OnQuestInit()
     String original = "   hello world   "
-    String upper = FO4StringUtils.ToUpper(original)
     String trimmed = FO4StringUtils.TrimBoth(original)
     Bool contains = FO4StringUtils.Contains(original, "world")
     String[] parts = FO4StringUtils.Split(original, " ")
     String joined = FO4StringUtils.Join(parts, "-")
 
-    Debug.Notification("Upper: " + upper)
     Debug.Notification("Trimmed: " + trimmed)
     Debug.Notification("Contains 'world'? " + contains)
     Debug.Notification("Joined: " + joined)
@@ -169,8 +143,7 @@ EndEvent
 
 ### Expected notifications:
 
-```
-Upper:    HELLO WORLD   
+``` 
 Trimmed: hello world
 Contains 'world'? True
 Joined: hello-world
@@ -223,3 +196,49 @@ Joined: hello-world
 
 #### Additional Convenience Functions
 - Echo, CharAt, ToChar, ToOrdinal, Repeat, and Count provide helper functionality for routine string tasks without relying on complex workarounds.
+
+### Case Sensitivity, String Normalization, and Engine String Internals
+
+All string search, comparison, and mutation functions provided by FO4StringUtils are case-insensitive by design. This decision is intentional and reflects the way Papyrus strings are handled internally by the Fallout 4 engine. Operations such as Search, Compare, Equals, Replace, and related functions operate on normalized string data so that character casing does not affect results.
+
+Internally, many game strings are pooled, cached, or resolved through the engine’s string table. As a result, strings originating from engine-managed sources—such as EditorIDs, form names, dialogue text, or other cached values—may be canonicalized or reused in ways that make casing unreliable or inconsistent when observed from Papyrus or the Creation Kit. Treating string comparisons as case-sensitive in this environment can therefore lead to surprising or non-deterministic behavior.
+
+FO4StringUtils embraces this reality by normalizing strings before performing comparisons or mutations, ensuring consistent and predictable behavior regardless of how the original strings were cased or cached by the engine. Rather than exposing or depending on engine-specific casing behavior, the library provides a stable, deterministic API that aligns with how Papyrus strings behave in practice. This avoids ambiguous matching semantics, eliminates subtle bugs caused by string pooling, and ensures that string operations behave consistently across all call sites and data sources.
+
+### Why is there no ToUpper or ToLower Function?
+
+Fallout 4’s string handling is not consistently case-preserving or case-authoritative. Strings may be normalized, pooled, or compared case-insensitively by the engine or Papyrus VM, meaning the apparent casing of a string is not always guaranteed to reflect its original or intended form. Providing a ToUpper or ToLower function would imply a reliable, canonical transformation that the engine cannot consistently guarantee. To avoid misleading behavior and false assumptions about string ownership and casing fidelity, FO4StringUtils intentionally omits these functions. Callers who require case normalization should implement it explicitly, understanding that even if a function converts a string to lowercase, the engine may later return that same value with different casing due to internal caching or normalization.
+
+Example of the situation if FO4StringUtils had implemented a ToLower function:
+
+```papyrus
+; Suppose we want to check if a user typed "cat"
+String input = "Cat"
+String output = FO4StringUtils.ToLower(input)
+Bool isCat = (output == "cat")
+```
+
+Sequence of events:
+- input is "Cat".
+- ToLower(input) would ideally produce "cat" in output.
+- However, due to the engine’s internal string caching, "CAT" or another cached form may be stored in output.
+- The value of isCat then may be false, even though logically it should be true.
+
+Takeaway:
+- Papyrus string values are affected by the engine’s caching system.
+- Explicit ToLower or ToUpper calls cannot guarantee deterministic results.
+- FO4StringUtils instead provides case-insensitive functions like Compare() to handle these comparisons reliably.
+
+Example of how to use FO4StringUtils to handle the situation:
+
+```papyrus
+; Safe way to check if a user typed "cat"
+String input = "Cat"
+Bool isCat = FO4StringUtils.Equals(input, "cat")
+```
+
+Sequence of events:
+- input is "Cat".
+- Equals(input, "cat") performs a case-insensitive comparison.
+- isCat evaluates to true even if the engine internally cached "CAT" or another variant.
+- This avoids ToLower/ToUpper entirely and is explicit, readable, and predictable.
