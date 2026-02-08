@@ -48,3 +48,9 @@ EndEvent
 |---------------|-----------------------------------|
 | PluginVersion | String PluginVersion() → "1.0"    |
 | GameVersion   | String GameVersion() → "1.10.163" |
+
+## Production Issues
+
+| Version    | Description |
+|------------|-------------|
+| N/A        | Zarro Boogs |
