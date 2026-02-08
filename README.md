@@ -8,14 +8,14 @@ Native F4SE plugin providing additional string utilities to Papyrus.
 
 ## Supported Fallout 4 Versions
 
-- 1.0 → 1.10.163 (GOTY) → FO4StringUtils_1_0
-- 2.0 → 1.10.984 (Next-Gen) → FO4StringUtils_2_0
-- 4.0 → 1.11.191 (Anniversary) → FO4StringUtils_4_0
+- 1.10.163 (GOTY) → Dist/0.6.23-1.10.163-GOTY
+- 1.10.984 (Next-Gen) → Dist/0.7.2-1.10.984-NextGen
+- 1.11.191 (Anniversary) → Dist/0.7.7-1.11.191-Anniversary
 
 ## Installation (for Users)
 
 1. Install the correct version of F4SE for your Fallout 4 runtime.
-2. Copy the DLL from the appropriate folder into:
+2. Copy the FO4StringUtils DLL from the appropriate folder into:
 
    Data\F4SE\Plugins\
 
