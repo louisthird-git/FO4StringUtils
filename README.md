@@ -48,6 +48,7 @@ EndEvent
 |---------------|-----------------------------------|
 | PluginVersion | String PluginVersion() → "1.0"    |
 | GameVersion   | String GameVersion() → "1.10.163" |
+| F4SEVersion   | String F4SEVersion() → "0.6.23"   |
 
 ## Production Issues
 
