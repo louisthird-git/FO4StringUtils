@@ -37,7 +37,7 @@ ScriptName MyScript extends Quest
 Import FO4StringUtils
 
 Event OnQuestInit()
-   String result = FO4StringUtils.ToUpper("hello world")
+   String result = FO4StringUtils.Replace("Radroach Meat", "Radroach", "Bloatfly")
    Debug.Notification(result)
 EndEvent
 ```
