@@ -1,7 +1,7 @@
 # FO4StringUtils Distributions
 
 ## Organization
-- Folders are organized by game edition: <F4SE-Version>-<FO4-Version>-<FO4-Edition>
+- Folders are organized by game edition: F4SEVersion-FO4Version-FO4Edition
 - Beneath that are FO4StringUtils distributions for that game edition: X.Y
 
 ## Installation
