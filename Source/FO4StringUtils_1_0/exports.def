@@ -1,0 +1,4 @@
+LIBRARY	"FO4StringUtils_1_0"
+EXPORTS
+F4SEPlugin_Query
+F4SEPlugin_Load
