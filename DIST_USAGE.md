@@ -28,7 +28,7 @@ Enable the ESP/Plugin:
 
 ```
 FO4StringUtils/
-└── Releases/
+└── Dist/
     ├── 0.6.23-1.10.163-GOTY/
     │   └── 1.0/
     │       ├── Data/
