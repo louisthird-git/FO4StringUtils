@@ -1,4 +1,4 @@
-FO4StringUtils Test Harness — How to Test
+# FO4StringUtils Test Harness — How to Test
 
 This document explains how to set up and run the FO4StringUtils test harness to verify all native functions work correctly in your installation of Fallout 4 / F4SE.
 
