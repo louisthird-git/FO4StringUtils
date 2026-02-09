@@ -63,7 +63,6 @@ Intended for modders who need dependable, full-featured string utilities without
 | RuntimeVersion()         | Returns the F4SE runtime version             | String ver = FO4StringUtils.RuntimeVersion() => "0.6.23"                                 |
 | VersionInfo()            | Returns all the versions as a string         | String ver = FO4StringUtils.VersionInfo() => "Plugin:1.0.0,Game:1.10.163,Runtime:0.6.23" |
 | Count(source)            | Returns the number of characters in string   | Int len = FO4StringUtils.Count("Hello") => 5                                             |
-| IsEmpty(source)          | Returns True if string is empty              | Bool b = FO4StringUtils.IsEmpty("") => True                                              |
 
 ### Searching & Comparison
 
@@ -78,6 +77,7 @@ Intended for modders who need dependable, full-featured string utilities without
 | EndsWith(source, suffix)                       | Returns True if source ends with suffix                              | Bool b = FO4StringUtils.EndsWith("hello", "lo")                  |
 | Compare(left, right)                           | Case-insensitive comparison; returns -1, 0, or 1                     | Int cmp = FO4StringUtils.Compare("abc", "ABC") => 0              |
 | Equals(left, right)                            | Returns True if left equals right (case-insensitive)                 | Bool b = FO4StringUtils.Equals("abc", "ABC") => True             |
+| IsEmpty(source)                                | Returns True if string is empty                                      | Bool b = FO4StringUtils.IsEmpty("") => True                      |
 
 ### Replacing & Removing
 
