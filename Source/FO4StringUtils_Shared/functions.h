@@ -8,6 +8,10 @@
 
 #define PAPYRUS_CLASS_NAME                 "FO4StringUtils"    // Name of the Papyrus class for registration
 
+#define PLUGIN_VERSION_FUNCTION_NAME       "PluginVersion"
+#define GAME_VERSION_FUNCTION_NAME         "GameVersion"
+#define RUNTIME_VERSION_FUNCTION_NAME      "RuntimeVersion"
+#define VERSION_INFO_FUNCTION_NAME         "VersionInfo"
 #define ECHO_FUNCTION_NAME                 "Echo"
 #define COUNT_FUNCTION_NAME                "Count"
 #define IS_EMPTY_FUNCTION_NAME             "IsEmpty"

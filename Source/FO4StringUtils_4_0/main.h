@@ -7,14 +7,17 @@
 // F4SE
 #include "f4se_common/f4se_version.h" // for CURRENT_RELEASE_RUNTIME -- see for f4se versions
 
-#define PLUGIN_AUTHOR                 "louisthird"
-#define PLUGIN_VERSION                4
-#define PLUGIN_VERSION_STRING         "4.0.0"
-#define PLUGIN_NAME_SHORT             "FO4StringUtils"
-#define PLUGIN_NAME_LONG              "Fallout 4 String Utilities"
 #define SUPPORTED_RUNTIME_VERSION     CURRENT_RELEASE_RUNTIME
 #define MINIMUM_RUNTIME_VERSION       SUPPORTED_RUNTIME_VERSION
 #define COMPATIBLE(runtimeVersion)    (runtimeVersion == SUPPORTED_RUNTIME_VERSION)
+
+#define PLUGIN_AUTHOR                 "louisthird"
+#define PLUGIN_VERSION                4
+#define PLUGIN_VERSION_STRING         "4.1.0"
+#define GAME_VERSION_STRING           "1.11.191"
+#define RUNTIME_VERSION_STRING        "0.7.7"
+#define PLUGIN_NAME_SHORT             "FO4StringUtils"
+#define PLUGIN_NAME_LONG              "Fallout 4 String Utilities"
 #define PLUGIN_LOG_FILE_PATH          "\\My Games\\Fallout4\\F4SE\\FO4StringUtils.log"
 
 // BUILD NOTES:

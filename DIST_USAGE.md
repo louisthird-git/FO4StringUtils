@@ -28,43 +28,84 @@ Enable the ESP/Plugin:
 
 ```
 FO4StringUtils/
+│
 └── Dist/
+    │
     ├── 0.6.23-1.10.163-GOTY/
-    │   └── 1.0/
+    │   │
+    │   ├── 1.0/
+    │   │   ├── Data/
+    │   │   │   ├── F4SE/
+    │   │   │   │   └── Plugins/
+    │   │   │   │       └── FO4StringUtils_1_0.dll
+    │   │   │   └── Scripts/
+    │   │   │       ├── FO4StringUtils.pex
+    │   │   │       └── Source/
+    │   │   │           └── User/
+    │   │   │               └── FO4StringUtils.psc
+    │   │   └── FO4StringUtils-v1.0.7z
+    │   │
+    │   └── 1.1/
     │       ├── Data/
     │       │   ├── F4SE/
     │       │   │   └── Plugins/
-    │       │   │       └── FO4StringUtils_1_0.dll
+    │       │   │       └── FO4StringUtils_1_1.dll
     │       │   └── Scripts/
     │       │       ├── FO4StringUtils.pex
     │       │       └── Source/
     │       │           └── User/
     │       │               └── FO4StringUtils.psc
-    │       └── FO4StringUtils-v1.0.7z
+    │       └── FO4StringUtils-v1.1.7z
     │
     ├── 0.7.2-1.10.984-NextGen/
-    │   └── 2.0/
+    │   │
+    │   ├── 2.0/
+    │   │   ├── Data/
+    │   │   │   ├── F4SE/
+    │   │   │   │   └── Plugins/
+    │   │   │   │       └── FO4StringUtils_2_0.dll
+    │   │   │   └── Scripts/
+    │   │   │       ├── FO4StringUtils.pex
+    │   │   │       └── Source/
+    │   │   │           └── User/
+    │   │   │               └── FO4StringUtils.psc
+    │   │   └── FO4StringUtils-v2.0.7z
+    │   │
+    │   └── 2.1/
     │       ├── Data/
     │       │   ├── F4SE/
     │       │   │   └── Plugins/
-    │       │   │       └── FO4StringUtils_2_0.dll
+    │       │   │       └── FO4StringUtils_2_1.dll
     │       │   └── Scripts/
     │       │       ├── FO4StringUtils.pex
     │       │       └── Source/
     │       │           └── User/
     │       │               └── FO4StringUtils.psc
-    │       └── FO4StringUtils-v2.0.7z
+    │       └── FO4StringUtils-v2.1.7z
     │
     └── 0.7.7-1.11.191-Anniversary/
-        └── 4.0/
+        |
+        ├── 4.0/
+        │   ├── Data/
+        │   │   ├── F4SE/
+        │   │   │   └── Plugins/
+        │   │   │       └── FO4StringUtils_4_0.dll
+        │   │   └── Scripts/
+        │   │       ├── FO4StringUtils.pex
+        │   │       └── Source/
+        │   │           └── User/
+        │   │               └── FO4StringUtils.psc
+        │   └── FO4StringUtils-v4.0.7z
+        │
+        └── 4.1/
             ├── Data/
             │   ├── F4SE/
             │   │   └── Plugins/
-            │   │       └── FO4StringUtils_4_0.dll
+            │   │       └── FO4StringUtils_4_1.dll
             │   └── Scripts/
             │       ├── FO4StringUtils.pex
             │       └── Source/
             │           └── User/
             │               └── FO4StringUtils.psc
-            └── FO4StringUtils-v4.0.7z
+            └── FO4StringUtils-v4.1.7z
 ```

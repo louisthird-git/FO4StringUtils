@@ -44,15 +44,12 @@ EndEvent
 
 ## Feature Requests
 
-| Feature        | Description                                                          |
-|----------------|----------------------------------------------------------------------|
-| PluginVersion  | String PluginVersion() → "1.0"                                       |
-| GameVersion    | String GameVersion() → "1.10.163"                                    |
-| RuntimeVersion | String RuntimeVersion() → "0.6.23"                                   |
-| VersionInfo    | String VersionInfo() → "FO4StringUtils:1.0,FO4:1.10.163,F4SE:0.6.23" |
+| Feature    | Description |
+| ---------- |------------ |
+| N/A        | N/A         |
 
 ## Production Issues
 
 | Version    | Description |
-|------------|-------------|
+| ---------- | ----------- |
 | N/A        | Zarro Boogs |

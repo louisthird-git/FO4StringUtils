@@ -1,4 +1,4 @@
-LIBRARY	"FO4StringUtils_2_0"
+LIBRARY	"FO4StringUtils_2_1"
 EXPORTS
 F4SEPlugin_Query
 F4SEPlugin_Load

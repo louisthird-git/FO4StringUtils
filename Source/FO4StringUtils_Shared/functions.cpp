@@ -9,6 +9,7 @@
 #include <cctype>                           // for std char type functions like std::isdigit
 #include <functional>                       // for std::function
 
+#include "version.h"                        // for version strings
 #include "functions.h"                      // for papyrus plugin functions
 
 namespace Papyrus
@@ -82,6 +83,27 @@ namespace Papyrus
     inline std::string NormalizeForSearch(const BSFixedString& sourceBS)
     {
         return ToLowerCopy(FromBSFixedString(sourceBS));
+    }
+
+    BSFixedString PluginVersionFunction(StaticFunctionTag* base)
+    {
+        return ToBSFixedString(PluginVersion());
+    }
+
+    BSFixedString GameVersionFunction(StaticFunctionTag* base)
+    {
+        return ToBSFixedString(GameVersion());
+    }
+
+    BSFixedString RuntimeVersionFunction(StaticFunctionTag* base)
+    {
+        return ToBSFixedString(RuntimeVersion());
+    }
+
+    BSFixedString VersionInfoFunction(StaticFunctionTag* base)
+    {
+        std::string info = std::string("Plugin:") + PluginVersion() + ",Game:" + GameVersion() + ",Runtime:" + RuntimeVersion();
+        return ToBSFixedString(info);
     }
 
     BSFixedString EchoFunction(StaticFunctionTag* base, BSFixedString sourceBS)
@@ -1178,6 +1200,18 @@ namespace Papyrus
 
     bool RegisterFunctions(VirtualMachine* vm)
     {
+        vm->RegisterFunction(new NativeFunction0<StaticFunctionTag, BSFixedString>(PLUGIN_VERSION_FUNCTION_NAME, PAPYRUS_CLASS_NAME, PluginVersionFunction, vm));
+        vm->SetFunctionFlags(PAPYRUS_CLASS_NAME, PLUGIN_VERSION_FUNCTION_NAME, IFunction::kFunctionFlag_NoWait);
+
+        vm->RegisterFunction(new NativeFunction0<StaticFunctionTag, BSFixedString>(GAME_VERSION_FUNCTION_NAME, PAPYRUS_CLASS_NAME, GameVersionFunction, vm));
+        vm->SetFunctionFlags(PAPYRUS_CLASS_NAME, GAME_VERSION_FUNCTION_NAME, IFunction::kFunctionFlag_NoWait);
+
+        vm->RegisterFunction(new NativeFunction0<StaticFunctionTag, BSFixedString>(RUNTIME_VERSION_FUNCTION_NAME, PAPYRUS_CLASS_NAME, RuntimeVersionFunction, vm));
+        vm->SetFunctionFlags(PAPYRUS_CLASS_NAME, RUNTIME_VERSION_FUNCTION_NAME, IFunction::kFunctionFlag_NoWait);
+
+        vm->RegisterFunction(new NativeFunction0<StaticFunctionTag, BSFixedString>(VERSION_INFO_FUNCTION_NAME, PAPYRUS_CLASS_NAME, VersionInfoFunction, vm));
+        vm->SetFunctionFlags(PAPYRUS_CLASS_NAME, VERSION_INFO_FUNCTION_NAME, IFunction::kFunctionFlag_NoWait);
+
         vm->RegisterFunction(new NativeFunction1<StaticFunctionTag, BSFixedString, BSFixedString>(ECHO_FUNCTION_NAME, PAPYRUS_CLASS_NAME, EchoFunction, vm));
         vm->SetFunctionFlags(PAPYRUS_CLASS_NAME, ECHO_FUNCTION_NAME, IFunction::kFunctionFlag_NoWait);
 

@@ -13,6 +13,21 @@
 
 IDebugLog gLog;
 
+const char* PluginVersion()
+{
+	return PLUGIN_VERSION_STRING; // from main.h
+}
+
+const char* GameVersion()
+{
+	return GAME_VERSION_STRING; // from main.h
+}
+
+const char* RuntimeVersion()
+{
+	return RUNTIME_VERSION_STRING; // from main.h
+}
+
 extern "C" __declspec(dllexport) const F4SEPluginVersionData F4SEPlugin_Version =
 {
 	F4SEPluginVersionData::kVersion,
@@ -30,7 +45,7 @@ extern "C" bool F4SEPlugin_Query(const F4SEInterface* f4se, PluginInfo* info)
 {
 	gLog.OpenRelative(CSIDL_MYDOCUMENTS, PLUGIN_LOG_FILE_PATH);
 
-	_MESSAGE("FO4StringUtils Query v%s", PLUGIN_VERSION_STRING);
+	_MESSAGE("%s Query v%s", PLUGIN_NAME_SHORT, PLUGIN_VERSION_STRING);
 
 	// populate info structure
 	info->infoVersion = PluginInfo::kInfoVersion;
@@ -52,7 +67,7 @@ extern "C" bool F4SEPlugin_Load(const F4SEInterface* f4se)
 {
 	gLog.OpenRelative(CSIDL_MYDOCUMENTS, PLUGIN_LOG_FILE_PATH);
 
-	_MESSAGE("FO4StringUtils Load v%s", PLUGIN_VERSION_STRING);
+	_MESSAGE("%s Load v%s", PLUGIN_NAME_SHORT, PLUGIN_VERSION_STRING);
 
 	// check for compatible versions
 	if (f4se->isEditor || !COMPATIBLE(f4se->runtimeVersion))

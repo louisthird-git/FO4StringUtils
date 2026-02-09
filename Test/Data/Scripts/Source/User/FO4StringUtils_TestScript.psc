@@ -81,6 +81,33 @@ EndFunction
 Event OnQuestInit()
     Debug.Trace("FO4StringUtils: Starting test suite")
 
+    ; ---- Version tests ----
+
+    String pluginVer = FO4StringUtils.PluginVersion()
+    AssertTrue(!FO4StringUtils.IsEmpty(pluginVer), "PluginVersion not empty")
+
+    ; Expect something like "1.0" or "2.1.3"
+    AssertTrue(FO4StringUtils.Contains(pluginVer, "."), "PluginVersion contains dot")
+
+    String gameVer = FO4StringUtils.GameVersion()
+    AssertTrue(!FO4StringUtils.IsEmpty(gameVer), "GameVersion not empty")
+
+    ; FO4 versions always contain at least two dots (e.g. 1.10.163)
+    Int dotCount = FO4StringUtils.Count(gameVer) - FO4StringUtils.Count(FO4StringUtils.RemoveAll(gameVer, "."))
+    AssertTrue(dotCount >= 2, "GameVersion contains at least two dots")
+
+    String runtimeVer = FO4StringUtils.RuntimeVersion()
+    AssertTrue(!FO4StringUtils.IsEmpty(runtimeVer), "RuntimeVersion not empty")
+
+    AssertTrue(FO4StringUtils.Contains(runtimeVer, "."), "RuntimeVersion contains dot")
+
+    String versionInfo = FO4StringUtils.VersionInfo()
+    AssertTrue(!FO4StringUtils.IsEmpty(versionInfo), "VersionInfo not empty")
+
+    ; Expect comma-separated fields
+    String[] versionParts = FO4StringUtils.Split(versionInfo, ",")
+    AssertTrue(versionParts.Length >= 3, "VersionInfo has at least 3 parts")
+
     ; ---- Echo() ----
 
     Debug.Trace("NOTE: Papyrus uses an internal string cache; literal case may not be preserved across machines or load order")
