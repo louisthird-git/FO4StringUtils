@@ -2,9 +2,9 @@
 
 Native F4SE plugin providing additional string utilities to Papyrus.
 
-- /Dist   – Prebuilt plugin binaries for each Fallout 4 version (see DIST_USAGE.md)
-- /Source – C++ source and Visual Studio projects (see SOURCE_USAGE.md)
-- /Test   – Papyrus test mod and scripts (see TEST_USAGE.md)
+- /Dist   – Prebuilt plugin binaries for each Fallout 4 version (see [DIST_USAGE.md](DIST_USAGE.md))
+- /Source – C++ source and Visual Studio projects (see [SOURCE_USAGE.md](SOURCE_USAGE.md))
+- /Test   – Papyrus test mod and scripts (see [TEST_USAGE.md](TEST_USAGE.md))
 
 ## Supported Fallout 4 Versions
 
