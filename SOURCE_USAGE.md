@@ -54,6 +54,17 @@ Intended for modders who need dependable, full-featured string utilities without
 
 ## Function Reference
 
+### Utility
+
+| Function                 | Description                                  | Example                                                                                  |
+| ------------------------ | -------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| PluginVersion()          | Returns the FO4StringUtils version           | String ver = FO4StringUtils.PluginVersion() => "1.0.0"                                   |
+| GameVersion()            | Returns the Fallout 4 game version           | String ver = FO4StringUtils.GameVersion() => "1.10.163"                                  |
+| RuntimeVersion()         | Returns the F4SE runtime version             | String ver = FO4StringUtils.RuntimeVersion() => "0.6.23"                                 |
+| VersionInfo()            | Returns all the versions as a string         | String ver = FO4StringUtils.VersionInfo() => "Plugin:1.0.0,Game:1.10.163,Runtime:0.6.23" |
+| Count(source)            | Returns the number of characters in string   | Int len = FO4StringUtils.Count("Hello") => 5                                             |
+| IsEmpty(source)          | Returns True if string is empty              | Bool b = FO4StringUtils.IsEmpty("") => True                                              |
+
 ### Searching & Comparison
 
 | Function                                       | Description                                                          | Example                                                          |
@@ -66,7 +77,7 @@ Intended for modders who need dependable, full-featured string utilities without
 | StartsWith(source, prefix)                     | Returns True if source starts with prefix                            | Bool b = FO4StringUtils.StartsWith("hello", "he")                |
 | EndsWith(source, suffix)                       | Returns True if source ends with suffix                              | Bool b = FO4StringUtils.EndsWith("hello", "lo")                  |
 | Compare(left, right)                           | Case-insensitive comparison; returns -1, 0, or 1                     | Int cmp = FO4StringUtils.Compare("abc", "ABC") => 0              |
-| Equals(left, right)                            | Returns True if left equals right (case-insensitive)                 | Bool b = FO4StringUtils.Equals("abc", "ABC")                     |
+| Equals(left, right)                            | Returns True if left equals right (case-insensitive)                 | Bool b = FO4StringUtils.Equals("abc", "ABC") => True             |
 
 ### Replacing & Removing
 
@@ -118,8 +129,6 @@ Intended for modders who need dependable, full-featured string utilities without
 | OrdinalJoin(parts)       | Joins an array of ordinals into a string     | String s = FO4StringUtils.OrdinalJoin([65,66,67]) => "ABC"                                     |
 | OrdinalSplit(source)     | Splits a string into an array of ordinals    | Int[] arr = FO4StringUtils.OrdinalSplit("ABC") => [65,66,67]                                   |
 | Sort(parts)              | Sorts an array of strings (case-insensitive) | String[] arr = FO4StringUtils.Sort(["banana","Apple","carrot"]) => ["Apple","banana","carrot"] |
-| Count(source)            | Returns the number of characters in string   | Int len = FO4StringUtils.Count("Hello") => 5                                                   |
-| IsEmpty(source)          | Returns True if string is empty              | Bool b = FO4StringUtils.IsEmpty("") => True                                                    |
 
 ## Example Usage in a Quest Script
 
@@ -196,6 +205,9 @@ Joined: hello-world
 
 #### Additional Convenience Functions
 - Echo, CharAt, ToChar, ToOrdinal, Repeat, and Count provide helper functionality for routine string tasks without relying on complex workarounds.
+
+### Version Functions
+- PluginVersion, GameVersion, RuntimeVersion, and VersionInfo provide information about the version of FO4StringUtils, Fallout 4, and F4SE.
 
 ### Case Sensitivity, String Normalization, and Engine String Internals
 
