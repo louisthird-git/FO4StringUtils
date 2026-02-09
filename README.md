@@ -53,3 +53,8 @@ EndEvent
 | Version    | Description |
 | ---------- | ----------- |
 | N/A        | Zarro Boogs |
+
+## Credits
+
+- Bethesda for creating Fallout 4.
+- ChatGPT for assistance with API design review, Papyrus test coverage, native C++ implementations, and documentation guidance, with a focus on correctness, edge cases, and Fallout 4 engine string behavior.
