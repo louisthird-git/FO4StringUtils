@@ -52,6 +52,22 @@ FO4StringUtils is designed to provide reliable and comprehensive string utilitie
 
 Intended for modders who need dependable, full-featured string utilities without worrying about Papyrus caching quirks or inconsistent behavior.
 
+## Checking for FO4StringUtils
+
+For best practice, your mod should check for FO4StringUtils being installed by users using the following technique:
+
+```papyrus
+Bool Function CheckFO4StringUtils()
+    Int version = F4SE.GetPluginVersion("FO4StringUtils")
+    If version == -1
+        Debug.MessageBox("ERROR: FO4StringUtils is required and not detected. Install FO4StringUtils and ensure F4SE is up-to-date.")
+        Return False
+    EndIf
+    Debug.Trace("FO4StringUtils Installed. Version:" + version + " VersionInfo:" + FO4StringUtils.VersionInfo())
+    Return True
+EndFunction
+```
+
 ## Function Reference
 
 ### Utility
