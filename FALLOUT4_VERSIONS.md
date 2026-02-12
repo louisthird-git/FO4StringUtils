@@ -1,13 +1,13 @@
 # FALLOUT4_VERSIONS.md
 
-This document records known-good Steam depot manifest IDs for **[Fallout 4 - 377160](https://steamdb.info/app/377160/depots/)** and **[Creation Kit - 1946160](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  
+This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  
 All manifests listed together must be used as a set to recreate the version reliably to use it for testing.
 
 ---
 
 ## Version 1.10.163
 
-### Fallout 4 Game (1.10.163)
+### Fallout 4 Game (377160)
 
 | Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
 |------|------|--------------|-----------------|---------------|-----------------------|
@@ -26,7 +26,7 @@ All manifests listed together must be used as a set to recreate the version reli
 | Fallout 4 – Nuka-World | DLC | 490650 | 4873048792354485093 | 29 September 2016 – 14:31:56 UTC | `download_depot 377160 490650 4873048792354485093` |
 | Fallout 4 – Nuka-World English | Language Pack | 393895 | 7677765994120765493 | 29 September 2016 – 14:31:56 UTC | `download_depot 377160 393895 7677765994120765493` |
 
-### Fallout 4 Creation Kit (1.10.163)
+### Fallout 4 Creation Kit (1946160)
 
 | Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
 |------|------|--------------|-----------------|---------------|-----------------------|
@@ -35,7 +35,7 @@ All manifests listed together must be used as a set to recreate the version reli
 
 ## Version 1.10.984
 
-### Fallout 4 Game (1.10.984)
+### Fallout 4 Game (377160)
 
 | Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
 |------|------|--------------|-----------------|---------------|-----------------------|
@@ -54,7 +54,7 @@ All manifests listed together must be used as a set to recreate the version reli
 | Fallout 4 – Nuka-World | DLC | 490650 | 4873048792354485093 | 29 September 2016 – 14:31:56 UTC | `download_depot 377160 490650 4873048792354485093` |
 | Fallout 4 – Nuka-World English | Language Pack | 393895 | 7677765994120765493 | 29 September 2016 – 14:31:56 UTC | `download_depot 377160 393895 7677765994120765493` |
 
-### Fallout 4 Creation Kit (1.10.984)
+### Fallout 4 Creation Kit (1946160)
 
 | Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
 |------|------|--------------|-----------------|---------------|-----------------------|
