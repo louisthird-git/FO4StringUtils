@@ -6,7 +6,13 @@ This document records known-good Steam depot manifest IDs for **[Fallout 4](http
 - Press WIN+R and write `steam://open/console` and paste the Steam Console Commands into the Console.
 - The files are downloaded into your Steam folder and `steamapps\content` sub-folder.
 - The location for the folder is typically `C:\Program Files (x86)\Steam\steamapps\content`.
-- Copy the files in the depot folders into a new folder to act as the game folder.
+- Copy the files in the depot folders into a new folder called FROZEN to act as the game folder
+- Copy the files from the FROZEN folder into a new folder called WORKING that you will use for testing.
+
+Example Shortcuts:
+
+- Game shortcut: C:\Games\Fallout4\Fallout4_1.10.163_WORKING\Fallout4.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
+- CK shortcut: C:\Games\Fallout4\Tools\CreationKit\CreationKit_1.10.163\CreationKit.exe -game:"C:\Games\Fallout4\Fallout4_1.10.163_WORKING\Fallout4.exe"
 
 ---
 
