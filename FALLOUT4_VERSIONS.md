@@ -4,7 +4,8 @@ This document records known-good Steam depot manifest IDs for **[Fallout 4](http
 
 - All manifests listed together must be used as a set to recreate the version reliably to use it for testing.
 - Press WIN+R and write `steam://open/console` and paste the Steam Console Commands into the Console.
-- The files are downloaded into your Steam folder and insteamapps\content sub-folder.
+- The files are downloaded into your Steam folder and `steamapps\content` sub-folder.
+- The location for the folder is typically `C:\Program Files (x86)\Steam\steamapps\content`.
 - Copy the files in the depot folders into a new folder to act as the game folder.
 
 ---
