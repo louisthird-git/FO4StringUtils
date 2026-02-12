@@ -1,7 +1,7 @@
 # FALLOUT4_VERSIONS.md
 
 This document records known-good Steam depot manifest IDs for **Fallout 4** and **Creation Kit** versions supported by FO4StringUtils.  
-All manifests listed together must be used as a set to recreate this version reliably.
+All manifests listed together must be used as a set to recreate this version reliably to be used for testing.
 
 ---
 
@@ -33,11 +33,7 @@ All manifests listed together must be used as a set to recreate this version rel
 | Fallout 4 – Creation Kit 1 | Executable | 1946161 | 6928748513006443409 | 25 April 2022 – 17:54:54 UTC | `download_depot 1946160 1946161 6928748513006443409` |
 | Fallout 4 – Creation Kit 2 | Executable Data | 1946162 | 3951536123944501689 | 25 April 2022 – 17:54:54 UTC | `download_depot 1946160 1946162 3951536123944501689` |
 
----
-
 ## Version 1.10.984
-
---
 
 ## Version 1.11.191
 
