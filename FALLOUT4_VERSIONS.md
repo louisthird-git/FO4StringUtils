@@ -12,8 +12,8 @@ All manifests listed together must be used as a set to recreate this version rel
 | Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
 |------|------|--------------|-----------------|---------------|-----------------------|
 | Fallout 4 Executable | Executable | 377162 | 5847529232406005096 | 4 December 2019 – 17:44:02 UTC | `download_depot 377160 377162 5847529232406005096` |
-| Fallout 4 Content A | Exec Data | 377161 | 7497069378349273908 | 13 March 2019 – 14:56:03 UTC | `download_depot 377160 377161 7497069378349273908` |
-| Fallout 4 Content B | Exec Data | 377163 | 5819088023757897745 | 4 December 2019 – 22:01:42 UTC | `download_depot 377160 377163 5819088023757897745` |
+| Fallout 4 Content A | Executable Data | 377161 | 7497069378349273908 | 13 March 2019 – 14:56:03 UTC | `download_depot 377160 377161 7497069378349273908` |
+| Fallout 4 Content B | Executable Data | 377163 | 5819088023757897745 | 4 December 2019 – 22:01:42 UTC | `download_depot 377160 377163 5819088023757897745` |
 | Fallout 4 English | Language Pack | 377164 | 2178106366609958945 | 4 August 2016 – 16:58:29 UTC | `download_depot 377160 377164 2178106366609958945` |
 | Fallout 4 – Automatron | DLC | 435870 | 1691678129192680960 | 21 March 2016 – 20:51:09 UTC | `download_depot 377160 435870 1691678129192680960` |
 | Fallout 4 – Automatron English | Language Pack | 435871 | 5106118861901111234 | 21 March 2016 – 20:51:09 UTC | `download_depot 377160 435871 5106118861901111234` |
@@ -31,7 +31,7 @@ All manifests listed together must be used as a set to recreate this version rel
 | Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
 |------|------|--------------|-----------------|---------------|-----------------------|
 | Fallout 4 – Creation Kit 1 | Executable | 1946161 | 6928748513006443409 | 25 April 2022 – 17:54:54 UTC | `download_depot 1946160 1946161 6928748513006443409` |
-| Fallout 4 – Creation Kit 2 | Exec Data | 1946162 | 3951536123944501689 | 25 April 2022 – 17:54:54 UTC | `download_depot 1946160 1946162 3951536123944501689` |
+| Fallout 4 – Creation Kit 2 | Executable Data | 1946162 | 3951536123944501689 | 25 April 2022 – 17:54:54 UTC | `download_depot 1946160 1946162 3951536123944501689` |
 
 ---
 
