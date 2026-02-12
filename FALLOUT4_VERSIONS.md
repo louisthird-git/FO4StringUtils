@@ -68,3 +68,32 @@ This document records known-good Steam depot manifest IDs for **[Fallout 4](http
 
 ## Version 1.11.191
 
+## Fallout 4 (377160)
+
+| Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
+|------|------|--------------|-----------------|---------------|-----------------------|
+| Fallout 4 Executable | Executable | 377162 | 5433405173062582852 | 16 December 2025 – 15:00:27 UTC | `download_depot 377160 377162 5433405173062582852` |
+| Fallout 4 Content A | Executable Data | 377161 | 5983086794954940044 | 16 December 2025 – 15:00:27 UTC | `download_depot 377160 377161 5983086794954940044` |
+| Fallout 4 Content B | Executable Data | 377163 | 8360827888850301367 | 16 December 2025 – 15:00:27 UTC | `download_depot 377160 377163 8360827888850301367` |
+| Fallout 4 English | Language Pack | 377164 | 8492427313392140315 | 25 April 2024 – 14:02:17 UTC | `download_depot 377160 377164 8492427313392140315` |
+| Fallout 4 – Automatron | DLC | 435870 | 1213339795579796878 | 25 April 2024 – 14:02:17 UTC | `download_depot 377160 435870 1213339795579796878` |
+| Fallout 4 – Automatron English | Language Pack | 435871 | 471362073238143096 | 16 December 2025 – 15:00:27 UTC | `download_depot 377160 435871 471362073238143096` |
+| Fallout 4 – Wasteland Workshop | DLC | 435880 | 7708996200055144433 | 16 December 2025 – 15:00:27 UTC | `download_depot 377160 435880 7708996200055144433` |
+| Fallout 4 – Far Harbor | DLC | 435881 | 1207717296920736193 | 29 September 2016 – 14:31:54 UTC | `download_depot 377160 435881 1207717296920736193` |
+| Fallout 4 – Far Harbor English | Language Pack | 435882 | 8482181819175811242 | 18 May 2016 – 15:33:12 UTC | `download_depot 377160 435882 8482181819175811242` |
+| Fallout 4 – Contraptions Workshop | DLC | 480630 | 5527412439359349504 | 21 September 2016 – 15:30:33 UTC | `download_depot 377160 480630 5527412439359349504` |
+| Fallout 4 – Vault-Tec Workshop | DLC | 480631 | 6588493486198824788 | 2 August 2016 – 13:54:45 UTC | `download_depot 377160 480631 6588493486198824788` |
+| Fallout 4 – Vault-Tec Workshop English | Language Pack | 393885 | 5000262035721758737 | 2 August 2016 – 13:54:46 UTC | `download_depot 377160 393885 5000262035721758737` |
+| Fallout 4 – Nuka-World | DLC | 490650 | 4873048792354485093 | 29 September 2016 – 14:31:56 UTC | `download_depot 377160 490650 4873048792354485093` |
+| Fallout 4 – Nuka-World English | Language Pack | 393895 | 7677765994120765493 | 29 September 2016 – 14:31:56 UTC | `download_depot 377160 393895 7677765994120765493` |
+
+## Fallout 4 Creation Kit (1946160)
+
+| Name | Type | Depot Number | Manifest Number | Manifest Date | Steam Console Command |
+|------|------|--------------|-----------------|---------------|-----------------------|
+| Fallout 4 – Creation Kit 1 | Executable | 1946161 | 7144083600018745248 | 10 November 2025 – 16:52:35 UTC | `download_depot 1946160 1946161 7144083600018745248` |
+| Fallout 4 – Creation Kit 2 | Executable Data | 1946162 | 8081669680152160458 | 10 November 2025 – 16:52:35 UTC | `download_depot 1946160 1946162 8081669680152160458` |
+
+## Credits
+
+Thanks to **[SteamDB](https://steamdb.info/)** for their excellent website and database of Steam downloads.
