@@ -1,6 +1,6 @@
 # FALLOUT4_VERSIONS.md
 
-This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  **[SteamDB](https://steamdb.info/)** does not label game release versions or tag downloads with game release names, so the correct downloads must be carefully infered by comparing game release dates and the dates when downloads were posted to **[Steam](https://store.steampowered.com/)**.
+This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  **[SteamDB](https://steamdb.info/)** does not label game release versions or tag downloads with game release names, so the correct downloads were carefully infered by comparing game release dates and the dates when downloads were posted to **[Steam](https://store.steampowered.com/)**.
 
 ## How to create a game folder
 
