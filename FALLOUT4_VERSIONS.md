@@ -1,10 +1,11 @@
 # FALLOUT4_VERSIONS.md
 
 This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  
-All manifests listed together must be used as a set to recreate the version reliably to use it for testing.
-Press WIN+R and write steam://open/console and paste the Steam Console Commands into the Console.
-The files are downloaded into your Steam folder and insteamapps\content sub-folder.
-Copy the files in the depot folders into a new folder to act as the game folder.
+
+- All manifests listed together must be used as a set to recreate the version reliably to use it for testing.
+- Press WIN+R and write steam://open/console and paste the Steam Console Commands into the Console.
+- The files are downloaded into your Steam folder and insteamapps\content sub-folder.
+- Copy the files in the depot folders into a new folder to act as the game folder.
 
 ---
 
