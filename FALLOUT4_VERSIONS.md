@@ -1,10 +1,12 @@
 # FALLOUT4_VERSIONS.md
 
-This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  
+This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  **[SteamDB](https://steamdb.info/)** does not label game release versions or tag downloads with game release names, so the correct downloads must be carefully infered by comparing game release dates and the dates when downloads were posted to **[Steam](https://store.steampowered.com/)**.
+
+## How to create a game folder
 
 Create a FROZEN game folder:
 - All manifests listed together must be used as a set to recreate the version reliably to use it for testing.
-- Press WIN+R and write `steam://open/console` and paste the Steam Console Commands into the Console.
+- Press WIN+R and write `steam://open/console` and paste the Steam Console Commands from the table into the Console.
 - The files are downloaded into your Steam folder and `steamapps\content` sub-folder.
 - The location for the folder is typically `C:\Program Files (x86)\Steam\steamapps\content`.
 - Copy your preferences from a folder like `C:\Users\USERNAME\Documents\My Games\Fallout4` to a folder like `C:\Games\Fallout4\Prefs`.
