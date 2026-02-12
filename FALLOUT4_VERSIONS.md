@@ -96,4 +96,4 @@ This document records known-good Steam depot manifest IDs for **[Fallout 4](http
 
 ## Credits
 
-Thanks to **[SteamDB](https://steamdb.info/)** for their excellent website and database of Steam downloads.
+Thanks to **[SteamDB](https://steamdb.info/)** for their excellent website and database of **[Steam](https://store.steampowered.com/)** downloads.
