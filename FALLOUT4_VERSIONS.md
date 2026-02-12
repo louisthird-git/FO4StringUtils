@@ -1,6 +1,6 @@
 # FALLOUT4_VERSIONS.md
 
-This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  **[SteamDB](https://steamdb.info/)** does not label game release versions or tag downloads with game release names, so the correct downloads were carefully infered by comparing game release dates and the dates when downloads were posted to **[Steam](https://store.steampowered.com/)**.
+This document records known-good Steam depot manifest IDs for **[Fallout 4](https://steamdb.info/app/377160/depots/)** and **[Creation Kit](https://steamdb.info/app/1946160/depots/)** versions supported by FO4StringUtils.  **[SteamDB](https://steamdb.info/)** does not label game release versions or tag downloads with game release names, so the correct manifests were carefully inferred by comparing game release dates and the dates when downloads were posted to **[Steam](https://store.steampowered.com/)**.
 
 ## How to create a game folder
 
@@ -12,6 +12,7 @@ Create a FROZEN game folder:
 - Copy your preferences from a folder like `C:\Users\USERNAME\Documents\My Games\Fallout4` to a folder like `C:\Games\Fallout4\Prefs`.
 - Copy the files in the depot folders into a new folder named with `FROZEN` to act as the original game folder.
 - Note that the `FROZEN` original game folder will remain stable and you must never run the game from that folder.
+- Never launch Steam or the game while files are present only in the FROZEN folder.
 
 Create a WORKING game folder:
 - Copy the files from the FROZEN folder into a new WORKING game folder that you will use for testing.
@@ -21,7 +22,7 @@ Create a WORKING game folder:
 Example shortcut using F4SE to run the game:
 - C:\Games\Fallout4\Fallout4_1.10.163\f4se_loader.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
 
-Example shortcut running the game directly, i.e. not using F4SE (wrong for testing):
+Example shortcut running the game directly (❌ wrong for F4SE-based testing):
 
 - C:\Games\Fallout4\Fallout4_1.10.163\Fallout4.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
 
