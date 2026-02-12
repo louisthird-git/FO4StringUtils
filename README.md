@@ -6,7 +6,9 @@ Native F4SE plugin providing additional string utilities to Papyrus.
 - /Source – C++ source and Visual Studio projects (see [SOURCE_USAGE.md](SOURCE_USAGE.md))
 - /Test   – Papyrus test mod and scripts (see [TEST_USAGE.md](TEST_USAGE.md))
 
-## Supported Fallout 4 Versions (see [FALLOUT4_VERSIONS.md](FALLOUT4_VERSIONS.md))
+## Supported Fallout 4 Versions
+
+See [FALLOUT4_VERSIONS.md](FALLOUT4_VERSIONS.md)
 
 - 1.10.163 (GOTY) → Dist/0.6.23-1.10.163-GOTY
 - 1.10.984 (Next-Gen) → Dist/0.7.2-1.10.984-NextGen
