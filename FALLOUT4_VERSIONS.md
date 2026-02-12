@@ -1,7 +1,7 @@
 # FALLOUT4_VERSIONS.md
 
 This document records known-good Steam depot manifest IDs for **Fallout 4** and **Creation Kit** versions supported by FO4StringUtils.  
-All manifests listed together must be used as a set to recreate this version reliably to be used for testing.
+All manifests listed together must be used as a set to recreate the version reliably to use it for testing.
 
 ---
 
