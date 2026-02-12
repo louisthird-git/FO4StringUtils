@@ -8,19 +8,19 @@ Create a FROZEN game folder:
 - The files are downloaded into your Steam folder and `steamapps\content` sub-folder.
 - The location for the folder is typically `C:\Program Files (x86)\Steam\steamapps\content`.
 - Copy your preferences from a folder like `C:\Users\USERNAME\Documents\My Games\Fallout4` to a folder like `C:\Games\Fallout4\Prefs`.
-- Copy the files in the depot folders into a new folder called FROZEN to act as the game folder (you will never run the game from this folder).
+- Copy the files in the depot folders into a new folder named with `FROZEN` to act as the original game folder (you will never run the game from this folder).
 
 Create a WORKING game folder:
-- Copy the files from the FROZEN folder into a new folder called WORKING that you will use for testing.
+- Copy the files from the FROZEN folder into a new WORKING game folder that you will use for testing.
 - Download the correct version of F4SE that matches the game version and install it into the WORKING game folder.
 - Download the correct version of FO4StringUtils that matches the game version and F4SE version and install it into the WORKING game folder.
 
 Example shortcut using F4SE to run the game:
-- C:\Games\Fallout4\Fallout4_1.10.163_WORKING\f4se_loader.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
+- C:\Games\Fallout4\Fallout4_1.10.163\f4se_loader.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
 
 Example shortcut running the game directly, i.e. not using F4SE (wrong for testing):
 
-- C:\Games\Fallout4\Fallout4_1.10.163_WORKING\Fallout4.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
+- C:\Games\Fallout4\Fallout4_1.10.163\Fallout4.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
 
 Example shortcut to run the Creation Kit:
 - C:\Games\Fallout4\Tools\CreationKit\CreationKit_1.10.163\CreationKit.exe -game:"C:\Games\Fallout4\Fallout4_1.10.163_WORKING\Fallout4.exe"
