@@ -27,7 +27,7 @@ Example shortcut running the game directly (❌ wrong for F4SE-based testing):
 - C:\Games\Fallout4\Fallout4_1.10.163\Fallout4.exe -ini="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Fallout4.ini" -savedir="C:\Games\Fallout4\Prefs\Prefs_1.10.163\Saves"
 
 Example shortcut to run the Creation Kit:
-- C:\Games\Fallout4\Tools\CreationKit\CreationKit_1.10.163\CreationKit.exe -game:"C:\Games\Fallout4\Fallout4_1.10.163_WORKING\Fallout4.exe"
+- C:\Games\Fallout4\Tools\CreationKit\CreationKit_1.10.163\CreationKit.exe -game:"C:\Games\Fallout4\Fallout4_1.10.163\Fallout4.exe"
 
 ---
 
