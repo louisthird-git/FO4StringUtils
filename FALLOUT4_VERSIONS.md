@@ -9,10 +9,12 @@ Create a FROZEN game folder:
 - Press WIN+R and write `steam://open/console` and paste the Steam Console Commands from the table into the Console.
 - The files are downloaded into your Steam folder and `steamapps\content` sub-folder.
 - The location for the folder is typically `C:\Program Files (x86)\Steam\steamapps\content`.
-- Copy your preferences from a folder like `C:\Users\USERNAME\Documents\My Games\Fallout4` to a folder like `C:\Games\Fallout4\Prefs`.
 - Copy the files in the depot folders into a new folder named with `FROZEN` to act as the original game folder.
 - Note that the `FROZEN` original game folder will remain stable and you must never run the game from that folder.
 - The `FROZEN` folder must **never** be placed inside a Steam library and must **never** be registered with Steam.
+
+How to handle preferences:
+- If you have preferences from an existing Fallout 4 installation like `C:\Users\USERNAME\Documents\My Games\Fallout4`, then copy those preferences to a new PREFS folder like `C:\Games\Fallout4\Prefs`.
 
 Create a WORKING game folder:
 - Copy the files from the FROZEN folder into a new WORKING game folder that you will use for testing.
