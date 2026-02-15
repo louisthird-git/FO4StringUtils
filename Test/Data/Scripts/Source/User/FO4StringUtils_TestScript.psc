@@ -103,6 +103,7 @@ Event OnQuestInit()
 
     String versionInfo = FO4StringUtils.VersionInfo()
     AssertTrue(!FO4StringUtils.IsEmpty(versionInfo), "VersionInfo not empty")
+    Debug.Trace("FO4StringUtils VersionInfo: " + versionInfo)
 
     ; Expect comma-separated fields
     String[] versionParts = FO4StringUtils.Split(versionInfo, ",")
