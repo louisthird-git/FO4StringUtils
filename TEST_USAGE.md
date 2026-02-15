@@ -17,7 +17,22 @@ This document explains how to set up and run the FO4StringUtils test harness to 
 - Launch Fallout 4 with F4SE.
 - The test harness ESP depends on F4SE being loaded.
 
-3. Running the Test
+3. Compiling the Test
+
+The test harness Papyrus .psc source file should not need to be compiled as the included Papyrus .pex executable file can be used.  If compilation is necessary, then the following command can be used:
+
+```
+$ "C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Papyrus Compiler\PapyrusCompiler.exe" "C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source\User\FO4StringUtils_TestScript.psc" -f="C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source\Base\Institute_Papyrus_Flags.flg" -i="C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source" -i="C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source\Base" -op -r -final
+Papyrus Compiler Version 2.8.0.4 for Fallout 4
+Copyright (C) ZeniMax Media. All rights reserved.
+Starting 1 compile threads for 1 files...
+Compiling "C:\Program Files (x86)\Steam\steamapps\common\Fallout 4\Data\Scripts\Source\User\FO4StringUtils_TestScript.psc"...
+Compilation succeeded.
+
+Batch compile of 1 files finished. 1 succeeded, 0 failed.
+```
+
+4. Running the Test
 - Start the game and load a save.
 - Open the console (~) and type:
 - Run: startquest FO4StringUtils_Test
@@ -28,7 +43,7 @@ Output:
 - At the end of the test, a log reports: FO4StringUtils Passed: ### Failed: ### Total: ###
 - This shows a summary of all tests run during initialization.
 
-4. What Is Tested
+5. What Is Tested
 
 The test harness checks all FO4StringUtils functions including edge cases, e.g.:
 - Empty strings
@@ -37,13 +52,13 @@ The test harness checks all FO4StringUtils functions including edge cases, e.g.:
 - Single-character strings
 - Strings with repeated patterns
 
-5. Interpreting Results
+6. Interpreting Results
 - Passed: Function behaved as expected.
 - Failed: Function produced unexpected output.
 - Check the Papyrus log to see which assertions failed for more details.
 - Tip: The log file is located in: Documents\My Games\Fallout4\F4SE\Papyrus\Papyrus.0.log
 
-6. Resetting Tests
+7. Resetting Tests
 
 To re-run tests:
 - Make any changes to scripts or plugin DLLs.
@@ -51,12 +66,12 @@ To re-run tests:
 - Reload the test ESP or start a new game session.
 - Re-run: startquest FO4StringUtils_Test
 
-7. Notes
+8. Notes
 - This test harness does not affect your main gameplay save.
 - You can safely keep it installed alongside other mods.
 - Always test on a fresh save if you want reproducible results.
 
-8. Optional: Multi-Version Testing
+9. Optional: Multi-Version Testing
 
 If you want to verify all FO4StringUtils versions:
 - Install separate Fallout 4 versions (GOTY, NG, Anniversary) on different Steam accounts or directories.
