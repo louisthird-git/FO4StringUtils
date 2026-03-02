@@ -58,7 +58,7 @@ For best practice, your mod should check for FO4StringUtils being installed by u
 
 ```papyrus
 Bool Function CheckFO4StringUtils()
-    Int version = F4SE.GetPluginVersion("FO4StringUtils")
+    Int version = F4SE.GetPluginVersion("Fallout 4 String Utilities")
     If version == -1
         Debug.MessageBox("ERROR: FO4StringUtils is required and not detected. Install FO4StringUtils and ensure F4SE is up-to-date.")
         Return False
