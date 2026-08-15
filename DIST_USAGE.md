@@ -9,7 +9,7 @@
 Choose your version: Make sure you pick the distribution that matches your game edition:
 - GOTY → 0.6.23-1.10.163-GOTY
 - NextGen → 0.7.2-1.10.984-NextGen
-- Anniversary → 0.7.7-1.11.191-Anniversary
+- Anniversary → 0.7.8-1.11.221-Anniversary
 
 Copy the Data folder: Take the Data/ folder from the distribution you want and merge it into your Fallout 4 game directory’s Data/ folder.
 
@@ -97,15 +97,27 @@ FO4StringUtils/
         │   │               └── FO4StringUtils.psc
         │   └── FO4StringUtils-v4.0.7z
         │
-        └── 4.1/
+        ├── 4.1/
+        │   ├── Data/
+        │   │   ├── F4SE/
+        │   │   │   └── Plugins/
+        │   │   │       └── FO4StringUtils_4_1.dll
+        │   │   └── Scripts/
+        │   │       ├── FO4StringUtils.pex
+        │   │       └── Source/
+        │   │           └── User/
+        │   │               └── FO4StringUtils.psc
+        │   └── FO4StringUtils-v4.1.7z
+        │
+        └── 4.2/
             ├── Data/
             │   ├── F4SE/
             │   │   └── Plugins/
-            │   │       └── FO4StringUtils_4_1.dll
+            │   │       └── FO4StringUtils_4_2.dll
             │   └── Scripts/
             │       ├── FO4StringUtils.pex
             │       └── Source/
             │           └── User/
             │               └── FO4StringUtils.psc
-            └── FO4StringUtils-v4.1.7z
+            └── FO4StringUtils-v4.2.7z
 ```
