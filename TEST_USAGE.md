@@ -5,7 +5,7 @@ This document explains how to set up and run the FO4StringUtils test harness to 
 1. Requirements
 - Fallout 4 installed (any supported version: GOTY, NextGen, Anniversary)
 - F4SE matching your Fallout 4 version
-- FO4StringUtils plugin DLLs built for your version (FO4StringUtils_1_0.dll, FO4StringUtils_2_0.dll, FO4StringUtils_4_0.dll)
+- FO4StringUtils plugin DLLs built for your version (FO4StringUtils_1_0.dll, FO4StringUtils_2_0.dll, FO4StringUtils_4_0.dll, etc.)
 - Test harness ESP: FO4StringUtils_Test.esp
 - Papyrus scripts: all scripts located in Scripts/Source/User
 - Note: Scripts must be in the same structure as the game expects, e.g. Data\Scripts\Source\User\FO4StringUtils_TestScript.psc.

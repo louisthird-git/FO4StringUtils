@@ -12,7 +12,7 @@ See [FALLOUT4_VERSIONS.md](FALLOUT4_VERSIONS.md)
 
 - 1.10.163 (GOTY) → Dist/0.6.23-1.10.163-GOTY
 - 1.10.984 (Next-Gen) → Dist/0.7.2-1.10.984-NextGen
-- 1.11.221 (Anniversary) → Dist/0.7.8-1.11.221-Anniversary
+- 1.11.240 (Anniversary) → Dist/0.7.9-1.11.240-Anniversary
 
 ## Installation (for Users)
 
